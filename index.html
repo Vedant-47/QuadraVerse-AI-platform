@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Accessibility Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">AI Tool</div>
+    <nav>
+      <ul>
+        <li><a href="#feature1">Speech-to-Text</a></li>
+        <li><a href="#feature2">Summarize</a></li>
+        <li><a href="#feature3">TTS</a></li>
+        <li><a href="#feature4">Whisper Upload</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Feature 1 -->
+  <section class="feature light" id="feature1">
+    <div class="content">
+      <h1>OUT THERE</h1>
+      <h2>Live Speech-to-Text</h2>
+      <p>Convert speech into text in real time for better accessibility.</p>
+      <button onclick="startRecording()">Try Now</button>
+    </div>
+    <img src="C:\Users\Admin\Desktop\internship_projects\ai_accessiblity_tool_hackaton\pic.jpg" alt="Speech to Text">
+  </section>
+
+  <!-- Feature 2 Summarization -->
+  <section class="feature dark" id="feature2">
+    <img src="summary.jpg" alt="Summarization">
+    <div class="content">
+      <h1>IMMERSION</h1>
+      <h2>Summarization</h2>
+      <p>Summarize long transcripts accurately with AI.</p>
+      <textarea id="summaryInput" placeholder="Paste your text here..." rows="5" cols="50"></textarea><br>
+      <button onclick="summarizeText()">Summarize</button>
+      <h3>Summary:</h3>
+      <p id="summaryOutput"></p>
+    </div>
+  </section>
+
+  <!-- Feature 3 -->
+  <section class="feature light" id="feature3">
+    <div class="content">
+      <h1>TO INFINITY</h1>
+      <h2>Text-to-Speech Playback</h2>
+      <p>Listen to your text content with natural-sounding voices.</p>
+      <button onclick="playTTS()">Play Audio</button>
+    </div>
+    <img src="C:\Users\Admin\Desktop\internship_projects\ai_accessiblity_tool_hackaton\pic.jpg"alt="Text to Speech">
+  </section>
+
+  <!-- Feature 4 -->
+  <section class="feature dark" id="feature4">
+    <img src="C:\Users\Admin\Desktop\internship_projects\ai_accessiblity_tool_hackaton\summary.jpg" alt="Whisper Upload">
+    <div class="content">
+      <h1>STREAMLINE</h1>
+      <h2>Whisper Audio Upload</h2>
+      <p>Upload audio files and get accurate transcriptions via OpenAI Whisper.</p>
+      <input type="file" id="audioFile" accept="audio/*">
+      <button onclick="uploadWhisper()">Upload & Transcribe</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 AI Accessibility Tool | Built with ❤️ - Jetha Ke Janbaaz</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
