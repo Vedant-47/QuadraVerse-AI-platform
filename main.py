@@ -1,11 +1,11 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from .summarizer import summarize  # FIXED IMPORT
+from .summarizer import summarize
 
 app = FastAPI()
 
-# Allow frontend requests
+# Enable frontend access
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
